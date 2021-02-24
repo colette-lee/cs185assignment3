@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import Textdata from './textpage';
 import Imagedata from './imagepage';
 import Videodata from './videopage';
+import Tabledata from './tablepage';
+import Emaildata from './emailPage';
 
 
 class Body extends Component {
@@ -16,12 +18,17 @@ class Body extends Component {
             
             } else if (activetab==3) {
                 return <Videodata/>
+            
+            } else if (activetab==4) {
+                console.log("table");
+                return <Tabledata/>
+            
+            } else if (activetab==5) {
+                console.log("email");
+                return <Emaildata/>
+            } else {
+                return <div>Hello</div>
             }
-            // } else if (activetab==4) {
-            //     return <Tabledata/>
-            // } else if (activetab==5) {
-            //     return <Emaildata/>
-            // } 
         }
         return (displaycontent())
 

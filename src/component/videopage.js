@@ -37,20 +37,22 @@ class Videodata extends Component {
         
         return (
             <div>
-                <div className="grid-container">
-                    <div className="grid-item"><video width="320" onClick={(e)=>this.clickVid(ice)} src={ice}></video></div>
-                    <div className="grid-item"><video width="320" onClick={(e)=>this.clickVid(music)} src={music}></video></div>
-                    <div className="grid-item"><video width="320" onClick={(e)=>this.clickVid(dead)} src={dead}></video></div>
-                    <div className="grid-item"><video width="320" onClick={(e)=>this.clickVid(snow)} src={snow}></video></div>
-                    <div className="grid-item"><video width="320" onClick={(e)=>this.clickVid(fight)} src={fight}></video></div>
+                <body>
+                    <div className="grid-container">
+                        <div className="grid-item"><video width="320" onClick={(e)=>this.clickVid(ice)} src={ice}></video></div>
+                        <div className="grid-item"><video width="320" onClick={(e)=>this.clickVid(music)} src={music}></video></div>
+                        <div className="grid-item"><video width="320" onClick={(e)=>this.clickVid(dead)} src={dead}></video></div>
+                        <div className="grid-item"><video width="320" onClick={(e)=>this.clickVid(snow)} src={snow}></video></div>
+                        <div className="grid-item"><video width="320" onClick={(e)=>this.clickVid(fight)} src={fight}></video></div>
 
 
-                    
-                </div>
+                        
+                    </div>
 
-                <div className="modal" id="myModal" style={{display:this.state.modalDisplay}} onClick={(e)=>this.closeVid()}>
-                    <video class="modal-content-vid" id='currentImg' src={this.state.modalVid} controls={this.state.active} autoplay={this.state.active} paused={!this.state.active}></video>
-                </div>
+                    <div className="modal" id="myModal" style={{display:this.state.modalDisplay}} onClick={(e)=>this.closeVid()}>
+                        <video class="modal-content-vid" id='currentImg' src={this.state.modalVid} controls={this.state.active} autoplay={this.state.active} paused={!this.state.active}></video>
+                    </div>
+                </body>
             </div>
             
             

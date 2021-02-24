@@ -35,19 +35,21 @@ class Imagedata extends Component {
         
         return (
             <div>
-                <div className="grid-container">
-                    <img className="grid-item" className="grid-image" onClick={(e)=>this.clickImg(sponge)} src={sponge}></img>
-                    <img className="grid-item" className="grid-image" onClick={(e)=>this.clickImg(banned)} src={banned}></img>
-                    <img className="grid-item" className="grid-image" onClick={(e)=>this.clickImg(tradition)} src={tradition}></img>
-                    <img className="grid-item" className="grid-image" onClick={(e)=>this.clickImg(lecture)} src={lecture}></img>
-                    <img className="grid-item" className="grid-image" onClick={(e)=>this.clickImg(labor)} src={labor}></img>
-                    <img className="grid-item" className="grid-image" onClick={(e)=>this.clickImg(fryer)} src={fryer}></img>
+                <body>
+                    <div className="grid-container">
+                        <div className="grid-item"><img className="grid-image" onClick={(e)=>this.clickImg(sponge)} src={sponge}></img></div>
+                        <div className="grid-item"><img className="grid-image" onClick={(e)=>this.clickImg(banned)} src={banned}></img></div>
+                        <div className="grid-item"><img className="grid-image" onClick={(e)=>this.clickImg(tradition)} src={tradition}></img></div>
+                        <div className="grid-item"><img className="grid-image" onClick={(e)=>this.clickImg(lecture)} src={lecture}></img></div>
+                        <div className="grid-item"><img className="grid-image" onClick={(e)=>this.clickImg(labor)} src={labor}></img></div>
+                        <div className="grid-item"><img className="grid-image" onClick={(e)=>this.clickImg(fryer)} src={fryer}></img></div>
 
-                </div>
+                    </div>
 
-                <div className="modal" id="myModal" style={{display:this.state.modalDisplay}} onClick={(e)=>this.closeImg()}>
-                    <img  class="modal-content" id='currentImg' src={this.state.modalImg}></img>
-                </div>
+                    <div className="modal" id="myModal" style={{display:this.state.modalDisplay}} onClick={(e)=>this.closeImg()}>
+                        <img  class="modal-content" id='currentImg' src={this.state.modalImg}></img>
+                    </div>
+                </body>
             </div>
             
             
